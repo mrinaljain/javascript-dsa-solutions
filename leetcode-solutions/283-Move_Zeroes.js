@@ -26,9 +26,23 @@ var moveZeroes = function (nums) {
 console.log(moveZeroes(nums));
 
 
-
-
 //? TRICK :  insted of moving zeros to right(end) , solve for moving nonZeros to left(start) which is same as asked.
-// two pointers approach 
-
+//1. two pointers approach 
 // Solution Explaination https://www.youtube.com/watch?v=aayNRwUN3Do
+
+
+
+//2. splice approach
+var moveZeroesUsingSplice = function (nums) {
+  let n = nums.length;
+  for (let i = n-1; i >=0; i--) {
+    let element = nums[i];
+
+    if (element === 0) {
+      nums.splice(i, 1);
+      nums.push(0);
+    }
+  }
+  return nums;
+};
+

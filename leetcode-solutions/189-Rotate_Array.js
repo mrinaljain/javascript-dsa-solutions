@@ -60,5 +60,6 @@ Aarray rotate krna hai to simply
 reverse entire array
 then reverse 2 sub array [0 - k] [k - end]
 */
-// ! Remember to do swapping with destructuring to avoit memory limit error
+// ! Remember to do swapping with destructuring to avoid memory limit error
+//! also remember do not use direct Array.reverse , because it returns new array and we require in-place operation here
 // https://www.youtube.com/watch?v=BHr381Guz3Y
