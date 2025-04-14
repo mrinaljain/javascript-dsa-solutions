@@ -29,14 +29,16 @@ var missingNumber = function (nums) {
 };
 
 
-console.log(missingNumber(nums1));
-console.log(missingNumber(nums2));
-console.log(missingNumber(nums3));
+// console.log(missingNumber(nums1));
+// console.log(missingNumber(nums2));
+// console.log(missingNumber(nums3));
 
 // Bruteforce: TC: O(N Log N + N)
 /*
 Brute force is to sort array  and then run loop to find the misssing value
 
+another option is to use Hashing
+another option ti sto use does exist on each natural numbers
 */
 
 //Intution Optimised
@@ -48,4 +50,38 @@ so we can easily find the mising natural number
 3. reminder is answer
 */
 
-// TODO : more types of solutions available like XOR technique etc on leetcode
+
+
+// XOR technique
+/* XOR of same number gives ZERO , XOR of O and 1 gives 1
+based on this logic  if we XOR all the entries of array 
+and also XOR N numbers( length of array)
+
+then XOR of this 2 will be the reminder
+*/
+
+var missingNumberbyXOR = function (nums) {
+  // calculate the sume of all digits of array
+  // substract from sum of n natural numbers
+
+  let n = nums.length;
+
+  let xorN = 0;
+  let xorArr = 0;
+
+  nums.forEach(element => {
+   xorArr ^= element;
+  });
+
+  for (let i = 1; i <= nums.length; i++) {
+      xorN ^= i;
+  }
+
+  let ans = xorN ^ xorArr;
+
+  return ans;
+};
+
+console.log(missingNumberbyXOR(nums1));
+console.log(missingNumberbyXOR(nums2));
+console.log(missingNumberbyXOR(nums3));
