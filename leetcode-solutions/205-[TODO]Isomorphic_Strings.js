@@ -71,3 +71,8 @@ agar nhi hai to new use karenge
 
 final jo string banegi usko second string se compare karenge for answer
 */
+
+
+// TODO:  work on extension of this problem
+// handel unequal length of strings
+//if isomorphoc then  extend the shorter to match longer maintaining  valid character mapping
