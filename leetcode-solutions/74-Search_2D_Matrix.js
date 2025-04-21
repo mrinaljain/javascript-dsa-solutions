@@ -54,8 +54,15 @@ traverse entire matrix and find if exists
 - we can check that target exists in row or not by comparing it with first and last element of that row(given that each row is sorted in increasing order)
 */
 
-//? 3.[TODO] Optimal Approach TC: O(log(m+n))
 
+
+//? 3. Optimal Approach [Binary Search] TC: O(log(m+n))
+/*
+Idea is to implement binary search usinf halfing technique
+
+converting  single cordinate into 2D matrix cordinate is the KEY
+https://www.youtube.com/watch?v=JXU4Akft7yk
+*/
 
 var searchMatrixOptimal = function (matrix, target) {
  let rows = matrix.length;
