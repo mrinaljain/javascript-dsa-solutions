@@ -1,0 +1,1 @@
+- Any problem dealing with Substrings , start thinking towarda Two Pointer or Sliding Window approach.
