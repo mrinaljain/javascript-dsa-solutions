@@ -1,0 +1,22 @@
+{
+  "name": "javascript-dsa-solutions",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run leetcode-solutions/dummy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrinaljain/javascript-dsa-solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrinaljain/javascript-dsa-solutions/issues"
+  },
+  "homepage": "https://github.com/mrinaljain/javascript-dsa-solutions#readme",
+  "description": "",
+  "dependencies": {
+    "dsa.js": "^2.7.6"
+  }
+}

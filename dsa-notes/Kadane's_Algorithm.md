@@ -1,0 +1,5 @@
+- loop on the entire array with 
+- keep adding the sum
+- agar sume 0 se kam to reset sum  Else  update maxsum
+- otherwise carry on calculating sum
+- return  max sum in end
