@@ -10,7 +10,10 @@ const s2 = "  hello world  ";
 const s3 = "a good   example";
 
 
-// TC & SC = O(N)
+//?1. 
+/*
+ TC & SC = O(N)
+*/ 
 var reverseWords = function (s) {
   // remove extra space around
   let clearString = s.trim();
@@ -30,6 +33,3 @@ let ans3 = reverseWords(s3);
 console.log(ans1);
 console.log(ans2);
 console.log(ans3);
-
-
-// TODO : Need to try the solution in place withought any extra space O(1)
