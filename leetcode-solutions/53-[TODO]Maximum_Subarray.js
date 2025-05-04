@@ -77,16 +77,16 @@ console.log(maxSubArrayBetter(nums3));
 
 */
 var maxSubArrayOptimal = function(nums) {
-   let maxSum = nums[0];
+   let maxSum = 0;
    let sum = 0;
    for (let i = 0; i < nums.length; i++) {
-      sum += nums[i];
-      if(sum < 0){
-         sum = 0;
-      }else{
-          maxSum = Math.max(maxSum, sum);
-      }
-     
+     sum += nums[i];
+     if (sum > maxSum) {
+       maxSum = sum;
+     }
+     if (sum < 0) {
+       sum = 0;
+     }
    }   
    return maxSum;
 };
