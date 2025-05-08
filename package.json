@@ -5,6 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run leetcode-solutions/dummy.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrinaljain/javascript-dsa-solutions.git"
