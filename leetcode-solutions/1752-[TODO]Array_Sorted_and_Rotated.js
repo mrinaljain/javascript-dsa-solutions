@@ -48,5 +48,5 @@ nums3 = [1,2, 3,];
  console.log(check(nums3))
 
 
- // TODO: lool for O(N) time complaxity solution
+ // TODO: look for O(N) time complaxity solution
  //https://www.youtube.com/watch?time_continue=556&v=Vzs_vlCIFEw&embeds_referring_euri=https%3A%2F%2Fleetcode.com%2F
