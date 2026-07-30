@@ -1,0 +1,1 @@
+- always there should be an explaination in your head then only start writing code.
