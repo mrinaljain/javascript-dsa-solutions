@@ -1,0 +1,1 @@
+// A number is armstrong if sum of  cubs of each digit is equals to N
