@@ -5,7 +5,7 @@
 //  * * * * *
 
 
-let n = 5;
+let n = 1;
 
 // rows 
 for (let i = 1; i <= n; i++) {
